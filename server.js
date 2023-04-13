@@ -28,11 +28,11 @@ app.use(require("./routes/post_route"));
 app.use(require("./routes/file_route"));
 
 // accessing static files for hosting purpose
-app.use(express.static(path.join(__dirname, "../frontend/build"))); //configuring
+app.use(express.static(path.join(__dirname, "https://github.com/Oxxcloud/InstaFrotend/tree/main/build"))); //configuring
 //accessing
 
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../frontend/build/index.html"));
+  res.sendFile(path.join(__dirname, "https://github.com/Oxxcloud/InstaFrotend/blob/main/build/index.html"));
 });
 
 app.listen(PORT, () => {
