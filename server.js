@@ -28,7 +28,7 @@ app.use(require("./routes/post_route"));
 app.use(require("./routes/file_route"));
 
 // accessing static files for hosting purpose
-app.use(express.static(path.join(__dirname, "https://instafrotend-production.up.railway.app/frontend/build"))); //configuring
+app.use(express.static(path.join(__dirname, "../frontend/build"))); //configuring
 //accessing
 
 app.get("*", (req, res) => {
