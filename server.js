@@ -32,7 +32,7 @@ app.use(express.static(path.join(__dirname, "https://instafrotend-production.up.
 //accessing
 
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "https://instafrotend-production.up.railway.app/frontend/build/index.html"));
+  res.json({message:"prueba de que ese era el error")};
 });
 
 app.listen(PORT, () => {
